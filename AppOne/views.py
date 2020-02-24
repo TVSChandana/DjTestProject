@@ -33,6 +33,13 @@ def news_items(request):
 
         readerNames = pyNewsData2['readerNames']
 
+        positiveSentimentScore= 50
+
+        negativeSentimentScore=70
+
+        #     # "negativeSentimentScore": 0,
+
+
         # jobject = {
         #     "id": id,
         #     "newsHeadline": headline,
@@ -44,7 +51,7 @@ def news_items(request):
         #     # "negativeSentimentScore": 0,
         # }
 
-        list = [id, headline, newsText, date]
+        list = [id, headline, newsText, date, positiveSentimentScore, negativeSentimentScore]
         # newsData.append(list)
 
         # print(list[0])
