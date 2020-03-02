@@ -4,7 +4,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('news/', include('AppOne.urls')),
+    path('news/', include('E_News.urls')),
     path('about/', views.about),
     path('', views.home),
+    path('news/search/', include('E_News.urls')),
 ]
