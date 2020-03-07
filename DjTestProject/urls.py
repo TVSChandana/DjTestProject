@@ -8,4 +8,10 @@ urlpatterns = [
     path('about/', views.about),
     path('', views.home),
     path('news/search/', include('E_News.urls')),
+    path('news/crime/', include('E_News.urls')),
+    path('news/economic/', include('E_News.urls')),
+    path('news/politics/', include('E_News.urls')),
+    path('news/sports/', include('E_News.urls')),
+    path('news/foreign/', include('E_News.urls')),
+
 ]
